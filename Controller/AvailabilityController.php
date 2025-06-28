@@ -16,7 +16,6 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     exit();
 }
 
-// 🔵 Handle availability booking (GET)
 if ($_SERVER['REQUEST_METHOD'] === 'GET' && isset($_GET['name'], $_GET['room_type'], $_GET['checkin'], $_GET['checkout'], $_GET['guest_no'])) {
     $guest_name = $_GET['name'];
     $room_type = $_GET['room_type'];
