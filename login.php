@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-// If already logged in, redirect to homepage
 if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
     header("Location: index.php");
     exit;
