@@ -2,7 +2,7 @@
 require_once '../includes/db.php';
 require_once '../Model/AvailabilityModel.php';
 
-// 🟢 Handle billing info (POST)
+
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $room = floatval($_POST['room_charge'] ?? 0);
     $service = floatval($_POST['service_tax'] ?? 0);
