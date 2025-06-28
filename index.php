@@ -12,7 +12,7 @@ if (!isset($_SESSION['loggedin'])) {
     exit();
 }
 
-$isHome = true; // this must be set BEFORE header.php
+$isHome = true; 
 include 'includes/header.php'; 
 ?>
 
