@@ -1,0 +1,163 @@
+/* === Global Base === */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  text-align: center;
+}
+
+body.home-bg {
+  background-image: url('/Hotel/images/HOTEL.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #000; 
+}
+
+/* === Header & Navigation === */
+header {
+  background: rgb(1, 43, 77);
+  color: white;
+  padding: 15px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #ffcccc;
+}
+
+/* === Main Content === */
+main {
+  padding: 100px 30px 30px;
+}
+
+/* === Homepage Overlay === */
+.home-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  min-height: 60vh;
+}
+
+.home-content {
+  background: rgba(1, 29, 53, 0.687);
+  padding: 40px;
+  border-radius: 15px;
+  color: white;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.home-content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.home-content p {
+  font-size: 18px;
+}
+
+/* === Forms === */
+form {
+  display: inline-block;
+  text-align: left;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input, select, textarea {
+  width: 70%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+}
+
+button, input[type="submit"] {
+  padding: 10px 25px;
+  background: rgb(0, 3, 85);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover, input[type="submit"]:hover {
+  background: rgb(0, 3, 85);
+}
+
+/* === Tables === */
+table {
+  width: 60%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: white;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+th {
+  background: #eee;
+}
+
+/* === Review Section === */
+
+.calendar-container {
+  background: white;
+  width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.billing-info .charge-item {
+  padding: 10px 0; /* increased padding */
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+  max-width: 360px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.seasonal-rates div {
+  padding: 8px 0; /* increased padding */
+  font-size: 14px;
+  max-width: 450px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.review {
+  background: white;
+  padding: 15px;
+  margin: 20px auto;
+  width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
