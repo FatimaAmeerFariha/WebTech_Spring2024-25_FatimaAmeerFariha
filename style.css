@@ -130,7 +130,7 @@ th {
 }
 
 .billing-info .charge-item {
-  padding: 10px 0; /* increased padding */
+  padding: 10px 0; 
   border-bottom: 1px solid #ddd;
   font-size: 14px;
   max-width: 360px;
@@ -139,7 +139,7 @@ th {
 }
 
 .seasonal-rates div {
-  padding: 8px 0; /* increased padding */
+  padding: 8px 0; 
   font-size: 14px;
   max-width: 450px;
   margin: 0 auto;
