@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $food = floatval($_POST['food_charge'] ?? 0);
     $total = floatval($_POST['total'] ?? 0);
 
-    // Insert using actual posted billing info
+
     $stmt = $pdo->prepare("INSERT INTO billing (email, room_charges, service_tax, food_charges, total) VALUES (?, ?, ?, ?, ?)");
     $stmt->execute([$email, $room, $service, $food, $total]);
 
