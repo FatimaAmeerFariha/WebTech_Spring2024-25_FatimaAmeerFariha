@@ -13,10 +13,6 @@ class BillingModel {
         $stmt->execute([$email, $room_charges, $service_tax, $food_charges, $total]);
     }
 
-    public static function getAllBills() {
-        global $pdo;
-        $stmt = $pdo->query("SELECT * FROM billing ORDER BY created_at DESC");
-        return $stmt->fetchAll();
-    }
+   
 }
 ?>

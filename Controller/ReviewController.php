@@ -1,14 +1,15 @@
 <?php
-require_once '../Model/ReviewModel.php';
+require_once '../includes/db.php';
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST['name'] ?? '';
-    $type = $_POST['type'] ?? '';
-    $rating = $_POST['rating'] ?? 1;
-    $comment = $_POST['comment'] ?? '';
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    $name = $_POST['name'];
+    $type = $_POST['type'];
+    $rating = $_POST['rating'];
+    $comment = $_POST['comment'];
 
-    ReviewModel::saveReview($name, $type, $rating, $comment);
-    header("Location: ../View/ReviewSystem.php?message=Review submitted successfully!");
+    $stmt = $pdo->prepare("INSERT INTO reviews (name, type, rating, comment) VALUES (?, ?, ?, ?)");
+    $stmt->execute([$name, $type, $rating, $comment]);
+
+    header("Location: ../View/ReviewSystem.php?message=Thanks for your review!");
     exit();
 }
-?>
